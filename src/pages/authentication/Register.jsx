@@ -23,7 +23,7 @@ const Register = () => {
     const handleSubmit = async e =>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:8801/api/auth/register", inputs);
+            await axios.post("https://recipe-edamam-app-6004c468e055.herokuapp.com/api/auth/register", inputs);
             navigate("/login");
         }catch(err){
             setError(err.response.data);

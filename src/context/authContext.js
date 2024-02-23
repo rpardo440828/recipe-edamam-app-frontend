@@ -12,7 +12,7 @@ export const AuthContextProvider = ({children})=>{
 
     //Function calls the login backend function, sends the correct inputs, and sets the current user logged in
     const login = async(inputs)=>{
-        const res = await axios.post("http://localhost:8801/api/auth/login", inputs, {
+        const res = await axios.post("https://recipe-edamam-app-6004c468e055.herokuapp.com/api/auth/login", inputs, {
             withCredentials: true,
         });
         setCurrentUser(res.data);
@@ -20,7 +20,7 @@ export const AuthContextProvider = ({children})=>{
 
     //Function calls the logout backend function, and sets the current user to null
     const logout = async(inputs)=>{
-        const res = await axios.post("http://localhost:8801/api/auth/logout", {
+        const res = await axios.post("https://recipe-edamam-app-6004c468e055.herokuapp.com/api/auth/logout", {
             withCredentials: true,
         });
         setCurrentUser(null);
