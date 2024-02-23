@@ -1,0 +1,88 @@
+@media only screen and (max-width: 640px) {
+    .nutr {
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
+    }
+
+    .healthList {
+        padding-bottom: 15px;
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+    .nutr {
+        grid-template-columns: repeat(2, auto);
+        gap: 25px;
+    }
+
+    .healthList {
+        padding-bottom: 20px;
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nutr {
+        grid-template-columns: repeat(3, auto);
+        gap: 30px;
+    }
+    .healthList {
+        padding-bottom: 25px;
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .nutr {
+        grid-template-columns: repeat(3, auto);
+        gap: 40px;
+    }
+
+    .healthList {
+        padding-bottom: 35px;
+        h3 {
+            font-size: 35px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1536px) {
+    .nutr {
+        grid-template-columns: repeat(3, auto);
+        gap: 40px;
+    }
+
+    .healthList {
+        padding-bottom: 44px;
+        h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .nutr {
+        grid-template-columns: repeat(3, auto);
+        gap: 40px;
+    }
+
+    .healthList {
+        padding-bottom: 44px;
+        h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+.nutr {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,375 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 100%;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    background-color: gray;
+  }
+  100% {
+    transform: translateX(0%);
+    background-color: white;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    background-color: gray;
+  }
+  100% {
+    transform: translateX(0%);
+    background-color: white;
+  }
+}
+
+@keyframes barDivAnimation {
+  0% {
+    transform: translateX(-100%);
+    color: red;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    transform: translateX(0%);
+    color: orange;
+  }
+}
+
+/* 'sm': {'max': '640px'},
+
+      'md': {'max': '768px'},
+
+      'lg': {'max': '1024px'},
+
+      'xl': {'max': '1280px'},
+
+      '2xl': {'max': '1536px'}, */
+
+@media only screen and (max-width: 640px) {
+  .hero {
+    background-position-x: 70%;
+    height: 550px;
+  }
+
+  .header_container {
+    align-items: center;
+  }
+  
+  .hero_header {
+    max-width: 250px;
+  }
+
+  .pasta_hero {
+    background-position: 70;
+    height: 550px;
+  }
+
+  .pasta_header_container {
+    align-items: center;
+  }
+
+  .pasta_hero_header {
+    max-width: 250px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .hero_btn {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .hero {
+    background-position-x: 70%;
+    height: 650px;
+  }
+
+  .header_container {
+    align-items: center;
+  }
+  
+  .hero_header {
+    max-width: 300px;
+  }
+
+  .pasta_hero {
+    background-position: 70%;
+    height: 650px;
+  }
+
+  .pasta_header_container {
+    align-items: center;
+  }
+
+  .pasta_hero_header {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .hero_btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .bar {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-position-x: 70%;
+    height: 750px;
+  }
+
+  .header_container {
+    align-items: center;
+  }
+  
+  .hero_header {
+    max-width: 400px;
+  }
+
+  .pasta_hero {
+    background-position: 70%;
+    height: 750px;
+  }
+
+  .pasta_header_container {
+    align-items: center;
+  }
+
+  .pasta_hero_header {
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .hero_btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .bar {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-position: center;
+    height: 850px;
+  }
+
+  .header_container {
+    align-items: center;
+  }
+  
+  .hero_header {
+    max-width: 500px;
+  }
+
+  .pasta_hero {
+    background-position: center;
+    height: 850px;
+  }
+
+  .pasta_header_container {
+    align-items: center;
+  }
+
+  .pasta_hero_header {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  
+  .hero_btn {
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+
+  .bar {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+
+
+/* /////////////////////////////////////////////FIRST HERO SECTION////////////////////////////////////////////////*/
+.hero {
+  background-image: url('img/hero_img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+ .header_container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero_header {
+      background-color: #fff;
+      animation: 4s ease-out 0s 1 slideInFromLeft;
+      padding: 20px;
+      border-radius: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+      .link {
+        padding-left: 5px;
+      }
+
+      .hero_btn {
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: orange;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .hero_btn:hover {
+        background-color: rgb(192, 126, 3);
+      }
+
+      .hero_btn:active {
+        background-color: rgb(192, 126, 3);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    }
+    .hero_header:hover {
+      scale: 1.12;
+    }
+  }
+}
+
+/* ///////////////////////////BAR IN BETWEEN HERO SECTIONS//////////////////////////////// */
+.bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 10px;
+  animation: 3s ease-out 0s 1 barDivAnimation;
+  color: orange;
+  background-color: rgb(233, 231, 231);
+
+  h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+/* //////////////////////////////////////////SECOND HERO SECTION ABOUT PASTA//////////////////////////////// */
+
+.pasta_hero {
+  background-image: url('img/pasta_hero_img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .pasta_hero_container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pasta_hero_header {
+      background-color: white;
+      animation: 3s ease-out 0s 1 slideInFromRight;
+      padding: 20px;
+      border-radius: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+      h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      p {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .link {
+        padding-left: 10px;
+      }
+
+      .hero_btn {
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: orange;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .hero_btn:hover {
+        background-color: rgb(192, 126, 3);
+      }
+
+      .hero_btn:active {
+        background-color: rgb(192, 126, 3);;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    }
+
+    .pasta_hero_header:hover {
+      scale: 1.12;
+    }
+  }
+}

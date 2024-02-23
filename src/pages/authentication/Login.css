@@ -1,0 +1,104 @@
+@keyframes bounce {
+    0% {
+      transform: translateY(-500px);
+    }
+
+    10%, 30%, 50%, 70%, 90%, 100% {
+      transform: translateY(0px);
+    }
+
+    20% {
+      transform: translateY(-250px);
+    }
+
+    40% {
+      transform: translateY(-125px);
+    }
+
+    60% {
+      transform: translateY(-62px);
+    }
+
+    80% {
+      transform: translateY(-30px);
+    }
+
+    95% {
+      transform: translateY(-15px);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+  form {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  form {
+    padding: 50px;
+  }
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background: url('../../img/login_register_img.webp') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    h1 {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: orange;
+      gap: 20px;
+      border-radius: 15px;
+    }
+
+    .form_bounce {
+        animation: bounce 2.5s ease-in-out;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background-color: #0934f1;
+      cursor: pointer;
+      color: white;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+
+    p {
+      color: red;
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    span {
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
+  }

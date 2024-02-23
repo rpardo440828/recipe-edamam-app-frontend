@@ -1,0 +1,79 @@
+@media only screen and (max-width: 550px) {
+    h3 {
+        font-size: 20px;
+    }
+    .logo {
+        img {
+            width: 80px;
+        }
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    h3 {
+        font-size: 30px;
+    }
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: lightgray;
+    .nav_container{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .links {
+        display: flex;
+        flex-direction: row;
+        align-items:end;
+        gap: 10px;
+        padding-right: 20px;
+
+        .mainLink {
+            text-decoration: none;
+        }
+        
+        .mainLink:hover {
+        color: white;
+        }
+
+        .nav_btn {
+            border-radius: 0.75rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: white;
+            transition-duration: 300ms;
+        }
+
+        .nav_btn:hover {
+            background-color: orange;
+            h3 {
+                color: white;
+            }
+        }
+
+        h3 {
+            font-weight: 300;
+            text-decoration: none;
+            color: black;
+        }
+
+        span {
+            cursor: pointer;
+            color: white;
+            font-size: 30px;
+            font-weight: 300;
+        }
+        }
+    }
+  }
