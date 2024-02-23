@@ -21,12 +21,12 @@ The project also provides login capabilities with user information being stored 
   - MySQL
 
  - Frontend
-  - React JS
-  - React Router Dom
-  - Axios
-  - JavaScript
-  - Tailwind CSS
-  - Edamam Recipe API
+     - React JS
+     - React Router Dom
+     - Axios
+     - JavaScript
+     - Tailwind CSS
+     - Edamam Recipe API
 
 # API Limitations
 
